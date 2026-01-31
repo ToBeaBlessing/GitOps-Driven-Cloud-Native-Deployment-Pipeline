@@ -36,6 +36,9 @@ jobs:
       uses: golangci/golangci-lint-action@v6
       with:
         version: v1.56.2
+        # Adding '.' ensures it looks in the current directory
+        # Adding --timeout ensures it doesn't hang
+        args: --timeout=5m .
 
   push:
     runs-on: ubuntu-latest
