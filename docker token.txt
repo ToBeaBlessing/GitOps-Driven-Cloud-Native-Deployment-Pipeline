@@ -1,0 +1,2 @@
+docker login -u tobeablessing
+dckr_pat_IGMNQVjhkWPZ-U6a2fCl4T3lOuI
