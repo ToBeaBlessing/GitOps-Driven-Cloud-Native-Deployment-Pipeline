@@ -32,14 +32,17 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - name: Set up Go 1.22
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.22'
+
     - name: Run golangci-lint
       uses: golangci/golangci-lint-action@v6
       with:
         version: v1.56.2
-        # Adding '.' ensures it looks in the current directory
-        # Adding --timeout ensures it doesn't hang
-        args: --timeout=5m .
-
+        args: --timeout=5m
+   
   push:
     runs-on: ubuntu-latest
     # Ensure the image only pushes if the code is both buildable and clean
