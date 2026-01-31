@@ -77,7 +77,7 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        git config --global user.email "blomo2@morgan.edu"
+        git config --global user.email "blessingomomola@gmail.com"
         git config --global user.name "Blessing Omomola"
         git add helm/go-web-app-chart/values.yaml
         git commit -m "Update tag to ${{ github.run_id }} [skip ci]"
