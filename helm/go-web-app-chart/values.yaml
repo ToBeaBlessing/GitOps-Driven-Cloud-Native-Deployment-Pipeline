@@ -8,7 +8,7 @@ image:
   repository: tobeablessing/go-web-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "21540781962"
+  tag: "21541164258"
 
 ingress:
   enabled: false
